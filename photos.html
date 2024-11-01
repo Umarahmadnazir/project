@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\project\css\photos.css">
+    <title>Amal's Gym</title>
+</head>
+<body>
+    <nav>
+        <div class="nav_logo">
+            <a href="#"><img src="C:\Users\HP\Desktop\Screenshot 2024-11-01 011422.png" alt="Amal's Gym"></a>
+        </div>
+        <ul class="nav_links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="workout.html">Workout Plans</a></li>
+            <li><a href="nutrition.html">Nutrition Tips</a></li>
+            <li><a href="D:\5th semester\Web programming\Assigment_1\photos.html">photos</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <button class="join_button">Join Us</button>
+    </nav>
+    <main>
+        <section class="gallery">
+            <h2>Transformation Stories</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://www.anytimefitness.com/wp-content/uploads/2020/05/2-Bodyweight-Squat-768x512.jpg" alt="Transformation Story 1" class="gallery-img" onclick="openLightbox(this)">
+                    <p>Before and After: John Doe - Lost 30 lbs in 3 months!</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hubliexpress.com/wp-content/uploads/2024/01/Squat.jpg" alt="Transformation Story 2" class="gallery-img" onclick="openLightbox(this)">
+                    <p>Before and After: Jane Smith - Gained muscle and confidence!</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\HP\Desktop\Screenshot 2024-11-01 053830.png" alt="Workout Technique 1" class="gallery-img" onclick="openLightbox(this)">
+                    <p>Technique: Deadlifts - Master the form for best results!</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\HP\Desktop\Screenshot 2024-11-01 054050.png" alt="Workout Technique 2" class="gallery-img" onclick="openLightbox(this)">
+                    <p>Technique: Squats - Build your lower body strength!</p>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+        
+        <!-- Lightbox for larger image view -->
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="close">&times;</span>
+            <img class="lightbox-img" id="lightbox-img">
+            <div class="caption" id="caption"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Amal's Gym. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
